@@ -1,0 +1,186 @@
+
+/****************************************/
+/***********GENERAL*********************/
+/****************************************/
+
+*{
+  background-color: rgb(226, 226, 226);
+  margin-left: 15px;
+  margin-right: 20px;
+  margin-top: 5px;
+  font-family: bely;
+}
+.subtitels{
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black; 
+  padding:1%;
+}
+
+/****************************************/
+/***********HEADER*********************/
+/****************************************/
+#logo{
+  height: auto;
+  width: 5%;
+}
+.header, .header_kleineNav, nav{
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.header p{
+  padding-left: 5%; 
+}
+.header_kleineNav p{
+  font-family:bely;
+  font-weight: 700;
+  color:white;
+  padding:5px;
+  text-align: center;
+  background-color: #FF0103;
+}
+nav{
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black; 
+}
+nav p{
+  padding-top:10px;
+}
+
+
+/****************************************/
+/***********TOP NEWS*********************/
+/****************************************/
+.sectieTitel{
+  text-align: center;
+}
+#topNews{
+  display:flex;
+}
+#hoofdArtikel{
+  width: 100%;
+}
+#hoofdAfbeelding{
+  height: auto;
+  width: 65%;
+}
+.artikelSectie{
+  display: flex;
+}
+
+/****************************************/
+/***********Nieuws voor jou**************/
+/****************************************/
+#nieuwsVoorJou{
+  display: flex;
+  justify-content: space-between;
+}
+.nieuwsVoorJou_boxImage{
+  height: auto;
+  width: 70%;
+}
+#nieuwsVoorJou_buttons{
+  display: flex;
+  justify-content: center;
+  padding-bottom:2%;
+   padding-top: 2%;
+}
+
+/****************************************/
+/***********IN DE KIJKER*********************/
+/****************************************/
+.inDeKijker_boxesRij{
+    display: flex;
+    justify-content: space-between;
+}
+.inDeKijker_box_boxImage{
+  height: auto;
+  width: 70%;
+}
+
+/****************************************/
+/***********EXCLUSIEF ABBOS*********************/
+/****************************************/
+.exclusiefVoorAbbos_boxRij{
+  display: flex;
+  justify-content: space-between;
+}
+.exclusiefVoorAbbos_boxImage{
+  height: auto;
+  width: 70%;
+}
+.exclusiefVoorAbbos_mainboxImage{
+  height: auto;
+  width: 80%;
+}
+
+/****************************************/
+/***********showbizz*********************/
+/****************************************/
+#showbizz{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.showbizz_boxImage{
+  height: auto;
+  width: 70%;
+}
+/****************************************/
+/***********nina*********************/
+/****************************************/
+#nina{
+  display: flex;
+  justify-content: space-between;
+}
+.nina_boxImageRechterkant{
+  height: auto;
+  width: 50%;
+}
+/****************************************/
+/***********footer*********************/
+/****************************************/
+#abonneerDiv{
+  border-bottom: 2px solid black;
+  border-top: 2px solid black; 
+  align-items: center;
+  text-align: center;
+}
+#footerKnoppen{
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  
+}
+
+#footerKnoppen p{
+  font-family:bely;
+  font-weight: 700;
+  color:white;
+  padding:5px;
+  text-align: center;
+  background-color: #FF0103;
+}
+.footer_subtitel{
+  font-weight: 700;
+}
+#footer_links{
+  display: flex;
+  justify-content: center;
+}
+#footer_tekstAanhalingsteken{
+  justify-content: center;
+  display: flex;
+}
+#aanhalingsteken{
+  font-size: 55pt;
+}
