@@ -4,9 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import Artikelen from './components/artikelen/artikel'
+import Header from './components/header/header';
+import Footer from './components/footer/footer'
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Header/>
+    <Artikelen/>
+    <Footer/>
     <App />
   </React.StrictMode>
 );
