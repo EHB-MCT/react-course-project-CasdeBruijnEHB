@@ -1,5 +1,8 @@
 import React,{Component} from 'react';
 import {artikelService} from '../../services/artikelService';
+import arrowLeft from '../../assets/icons/arrowLeft.png'
+import arrowRight from '../../assets/icons/arrowRight.png'
+import bolletje from '../../assets/icons/BolletjeIcon.png'
 
 export default class Artikelen extends Component{
     
@@ -15,12 +18,13 @@ export default class Artikelen extends Component{
         <div id="topNews">
             <div id="hoofdArtikel">
             <img id="hoofdAfbeelding" src="https://static.forum.nl/cache/10011.10011/10011-s1920x1920-q60.jpg"></img>
+            <p className='artikelDatum'>24/05/22</p>
             <h2 className="artikelTitel">Putin rukt door in Europa</h2>
             <p className="artikelIntro">Putin zet zijn oorlog verder in Oekraïne.</p>
             </div>
             <div id="sidebars">
             <div id="sectieNetBinnen">
-                <h2 className="sectieTitel">NET BINNEN</h2>
+                <h2 className="sectieTitel"><img class="sidebarBolletje" src={bolletje}></img>NET BINNEN</h2>
                 <div className="artikelSectie">
                 <p className="sectieartikelTijdstip">14:15</p>
                 <p className="sectieartikelTitel">Biden wilt niet meer meewerken aan NATO</p>
@@ -42,8 +46,8 @@ export default class Artikelen extends Component{
                 <p className="sectieartikelTitel">Biden wilt niet meer meewerken aan NATO</p>
                 </div>
             </div>
-                <div id="sectieHLN+">
-                    <h2 className="sectieTitel">HLN+</h2>
+                <div id="sectieHLNplus">
+                    <h2 className="sectieTitel"><img class="sidebarBolletje" src={bolletje}></img>HLN+</h2>
                     <div className="artikelSectie">
                     <p className="sectieartikelTijdstip">15:16</p>
                     <p className="sectieartikelTitel">Tom Boonen herpakt zijn carrière</p>
@@ -84,12 +88,14 @@ export default class Artikelen extends Component{
             </div>  
         </div>
         <div id="nieuwsVoorJou_buttons">
-            <p>LINKS</p>
-            <p>BOLELTJE</p>
-            <p>BOLELTJE</p>
-            <p>BOLELTJE</p>
-            <p>RECHTS</p>
-            <p>MEER ZIEN</p>
+            <img class="navigatiePijltje" src={arrowLeft}></img>
+            <img class="navigatieBolletje" src={bolletje}></img>
+            <img class="navigatieBolletje" src={bolletje}></img>
+            <img class="navigatieBolletje" src={bolletje}></img>
+            <img class="navigatiePijltje" src={arrowRight}></img>
+        </div>
+        <div id="inDeKijker_buttons">
+            <p class="buttonMeerZien">MEER ZIEN</p>
         </div>
 
 
@@ -98,40 +104,40 @@ export default class Artikelen extends Component{
             <div className="inDeKijker_boxesRij">
             <div className="inDeKijker_box">
                 <img className="inDeKijker_box_boxImage" src="https://play-lh.googleusercontent.com/IeNJWoKYx1waOhfWF6TiuSiWBLfqLb18lmZYXSgsH1fvb8v1IYiZr5aYWe0Gxu-pVZX3" ></img>
-                <p className="inDeKijker_box">16/05/22</p>
-                <p className="inDeKijker_box">Putin rukt door in Europa</p>
+                <p className="inDeKijker_date">16/05/22</p>
+                <p className="inDeKijker_title">Putin rukt door in Europa</p>
             </div>  
             <div className="inDeKijker_box">
                 <img className="inDeKijker_box_boxImage" src="https://play-lh.googleusercontent.com/IeNJWoKYx1waOhfWF6TiuSiWBLfqLb18lmZYXSgsH1fvb8v1IYiZr5aYWe0Gxu-pVZX3" ></img>
-                <p className="inDeKijker_box">16/05/22</p>
-                <p className="inDeKijker_box">Putin rukt door in Europa</p>
+                <p className="inDeKijker_date">16/05/22</p>
+                <p className="inDeKijker_title">Putin rukt door in Europa</p>
             </div> 
             <div className="inDeKijker_box">
                 <img className="inDeKijker_box_boxImage" src="https://play-lh.googleusercontent.com/IeNJWoKYx1waOhfWF6TiuSiWBLfqLb18lmZYXSgsH1fvb8v1IYiZr5aYWe0Gxu-pVZX3" ></img>
-                <p className="inDeKijker_box">16/05/22</p>
-                <p className="inDeKijker_box">Putin rukt door in Europa</p>
+                <p className="inDeKijker_date">16/05/22</p>
+                <p className="inDeKijker_title">Putin rukt door in Europa</p>
             </div> 
             </div>
             <div className="inDeKijker_boxesRij">
             <div className="inDeKijker_box">
                 <img className="inDeKijker_box_boxImage" src="https://play-lh.googleusercontent.com/IeNJWoKYx1waOhfWF6TiuSiWBLfqLb18lmZYXSgsH1fvb8v1IYiZr5aYWe0Gxu-pVZX3" ></img>
-                <p className="inDeKijker_box">16/05/22</p>
-                <p className="inDeKijker_box">Putin rukt door in Europa</p>
+                <p className="inDeKijker_date">16/05/22</p>
+                <p className="inDeKijker_title">Putin rukt door in Europa</p>
             </div>  
             <div className="inDeKijker_box">
                 <img className="inDeKijker_box_boxImage" src="https://play-lh.googleusercontent.com/IeNJWoKYx1waOhfWF6TiuSiWBLfqLb18lmZYXSgsH1fvb8v1IYiZr5aYWe0Gxu-pVZX3" ></img>
-                <p className="inDeKijker_box">16/05/22</p>
-                <p className="inDeKijker_box">Putin rukt door in Europa</p>
+                <p className="inDeKijker_date">16/05/22</p>
+                <p className="inDeKijker_title">Putin rukt door in Europa</p>
             </div> 
             <div className="inDeKijker_box">
                 <img className="inDeKijker_box_boxImage" src="https://play-lh.googleusercontent.com/IeNJWoKYx1waOhfWF6TiuSiWBLfqLb18lmZYXSgsH1fvb8v1IYiZr5aYWe0Gxu-pVZX3" ></img>
-                <p className="inDeKijker_box">16/05/22</p>
-                <p className="inDeKijker_box">Putin rukt door in Europa</p>
+                <p className="inDeKijker_date">16/05/22</p>
+                <p className="inDeKijker_title">Putin rukt door in Europa</p>
             </div> 
             </div>
         </div>
         <div id="inDeKijker_buttons">
-            <p>MEER ZIEN</p>
+            <p class="buttonMeerZien">MEER ZIEN</p>
         </div>
 
 
@@ -162,6 +168,9 @@ export default class Artikelen extends Component{
             </div> 
             </div>
         </div>
+        <div id="inDeKijker_buttons">
+            <p class="buttonMeerZien">MEER ZIEN</p>
+        </div>
 
 
         <h2 className="subtitels">sport</h2>
@@ -183,12 +192,14 @@ export default class Artikelen extends Component{
             </div>  
         </div>
         <div id="nieuwsVoorJou_buttons">
-            <p>LINKS</p>
-            <p>BOLELTJE</p>
-            <p>BOLELTJE</p>
-            <p>BOLELTJE</p>
-            <p>RECHTS</p>
-            <p>MEER ZIEN</p>
+        <img class="navigatiePijltje" src={arrowLeft}></img>
+            <img class="navigatieBolletje" src={bolletje}></img>
+            <img class="navigatieBolletje" src={bolletje}></img>
+            <img class="navigatieBolletje" src={bolletje}></img>
+            <img class="navigatiePijltje" src={arrowRight}></img>
+        </div>
+        <div id="inDeKijker_buttons">
+            <p class="buttonMeerZien">MEER ZIEN</p>
         </div>
 
 
@@ -225,14 +236,17 @@ export default class Artikelen extends Component{
             <p className="showbizz_boxTitle">Putin rukt door in Europa</p>
             </div> 
         </div>
+        <div id="inDeKijker_buttons">
+            <p class="buttonMeerZien">MEER ZIEN</p>
+        </div>
 
 
         <h2 className="subtitels">nina</h2>
         <div id="nina">
-            <div className="nina_box">
+            <div className="nina_mainbox">
             <img className="nina_boxImage" src="https://play-lh.googleusercontent.com/IeNJWoKYx1waOhfWF6TiuSiWBLfqLb18lmZYXSgsH1fvb8v1IYiZr5aYWe0Gxu-pVZX3" ></img>
-            <p className="nina_boxDate">16/05/22</p>
-            <p className="nina_boxTitle">Putin rukt door in Europa</p>
+            <p className="nina_mainboxDate">16/05/22</p>
+            <p className="nina_mainboxTitle">Putin rukt door in Europa</p>
             </div> 
             <div id="ninaRechterkant">
             <div className="nina_box">
@@ -246,6 +260,9 @@ export default class Artikelen extends Component{
                 <p className="nina_boxTitle">Putin rukt door in Europa</p>
             </div> 
             </div>
+        </div>
+        <div id="inDeKijker_buttons">
+            <p class="buttonMeerZien">MEER ZIEN</p>
         </div>
 
 
@@ -266,6 +283,9 @@ export default class Artikelen extends Component{
             <p className="nieuwsVoorJou_boxDate">16/05/22</p>
             <p className="nieuwsVoorJou_boxTitle">Putin rukt door in Europa</p>
             </div>  
+        </div>
+        <div id="inDeKijker_buttons">
+            <p class="buttonMeerZien">MEER ZIEN</p>
         </div>
      </main>
         )
