@@ -6,7 +6,7 @@ export default class Footer extends Component{
         return (
             <footer>
             <div id="abonneerDiv">
-               <h1>ABONNEER OP HLN VOOR NOG MEER</h1>
+               <h2>ABONNEER OP HLN VOOR NOG MEER</h2>
                <p>Mis nooit meer de belangrijkste nieuwtjes op HLN en word nu lid!</p>
                <div id="footerKnoppen">
                  <p>Abonneren</p>
