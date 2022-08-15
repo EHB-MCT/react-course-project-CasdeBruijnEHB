@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/EHB-MCT/react-course-project-CasdeBruijnEHB/static/css/main.a798c5d6.css",
+    "main.js": "/EHB-MCT/react-course-project-CasdeBruijnEHB/static/js/main.c0ef4229.js",
+    "static/js/787.03dee237.chunk.js": "/EHB-MCT/react-course-project-CasdeBruijnEHB/static/js/787.03dee237.chunk.js",
+    "static/media/logo.svg": "/EHB-MCT/react-course-project-CasdeBruijnEHB/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/EHB-MCT/react-course-project-CasdeBruijnEHB/index.html",
+    "main.a798c5d6.css.map": "/EHB-MCT/react-course-project-CasdeBruijnEHB/static/css/main.a798c5d6.css.map",
+    "main.c0ef4229.js.map": "/EHB-MCT/react-course-project-CasdeBruijnEHB/static/js/main.c0ef4229.js.map",
+    "787.03dee237.chunk.js.map": "/EHB-MCT/react-course-project-CasdeBruijnEHB/static/js/787.03dee237.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a798c5d6.css",
+    "static/js/main.c0ef4229.js"
+  ]
+}
